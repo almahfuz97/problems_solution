@@ -31,7 +31,6 @@ int main()
         aMap.insert(pair<int, int>(sampleArr[i], 0));
         sum = sum + sampleArr[i];
     }
-    //    only considering floor value of avg. as the task is to find the counts of int elements
     float avg = sum / (float)n;
 
     for (int i = 0; i < n; i++)
