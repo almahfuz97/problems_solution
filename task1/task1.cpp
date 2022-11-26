@@ -22,8 +22,7 @@ int main()
 {
     int sampleArr[10000], n;
     cin >> n;
-    map<int, int> aMap;
-    map<int, int>::iterator itr;
+    map<float, int> aMap;
     int sum = 0;
 
     for (int i = 0; i < n; i++)
@@ -33,7 +32,7 @@ int main()
         sum = sum + sampleArr[i];
     }
     //    only considering floor value of avg. as the task is to find the counts of int elements
-    int avg = sum / n;
+    float avg = sum / (float)n;
 
     for (int i = 0; i < n; i++)
     {
